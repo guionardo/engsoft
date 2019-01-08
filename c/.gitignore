@@ -1,0 +1,8 @@
+main
+*.dev
+*.exe
+*.layout
+Makefile.win
+settings.json
+*.o
+*.out
