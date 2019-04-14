@@ -1,6 +1,6 @@
 # Qualidade de Software - Arquivos e informações para o MAPA
 
-## Convesações:
+## Conversações:
 
 * a aula do dia 12/03 fala exatamente sobre o nivel 2 do CMMI e fala praticamente a aula toda sobre o MAPA
 
@@ -16,3 +16,10 @@
         * Requisitos e documentação com livre possibilidade de alteração e sem formalização de mudanças
 
 * Problema que a professora falou na ultima aula que tem que descrever uma solução baseada no CMMI, ate pq ela listou os pontos fracos e fortes relacionando a cada área, so fosse apenas isso ela ja teria dado a resposta do MAPA
+
+* Professora falou que aquela "descoberta tardia e reativa dos problemas" vai no gerenciamento de riscos
+
+    * Mas rskm nem tem no nível 2. Pelo menos não foi abordado ali
+    * Acho que vai em " Monitoramento e controle do projeto (PMC)"
+
+* Os pontos fracos é aquela lista do enunciado
