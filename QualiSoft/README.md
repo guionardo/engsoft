@@ -75,3 +75,5 @@ Analise as informações levantadas e decisões tomadas pela equipe de implement
     * Acho que vai em " Monitoramento e controle do projeto (PMC)"
 
 * Os pontos fracos é aquela lista do enunciado
+
+* Produtos de trabalho
