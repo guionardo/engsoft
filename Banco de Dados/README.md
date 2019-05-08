@@ -60,7 +60,15 @@ a. Clique em Nova e defina um nome para a conexão. Para fins de estudo, não se
 
 Temos também a opção de usar outras ferramendas de acesso:
 
-* [MySQL Workbench](https://www.mysql.com/products/workbench/)] (a ferramenta oficial do MySQL para acesso aos dados)
+* [MySQL Workbench](https://www.mysql.com/products/workbench/) (a ferramenta oficial do MySQL para acesso aos dados)
 ![MySQL Workbench](imagens/mysql_workbench_01.jpg)
 
 * [DBeaver](https://dbeaver.io/) Ferramenta interessante que possibilita o acesso a múltiplos bancos de dados, além do MySQL/MariaDB, Oracle, SQL Server, PostgreSQL, SQLite, e muitos outros.
+
+### Instalação no MacOS
+
+A documentação do MariaDB já dispõe de um [tutorial de instalação para MacOS](https://mariadb.com/kb/en/library/installing-mariadb-on-macos-using-homebrew/) e é bem tranquilo de executar.
+
+### Instalação no Linux
+
+[Vários links](https://mariadb.com/kb/en/library/binary-packages/)
