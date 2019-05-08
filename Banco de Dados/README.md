@@ -39,3 +39,15 @@ Em nossas aulas, usaremos o MySQL para os exercícios. Sugiro utilizar o MariaDB
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_09.jpg)
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_10.jpg)
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_11.jpg)
+
+### Acesso aos dados
+
+O MariaDB já instala o HeidiSQL para acesso aos dados. ![Downloads - MariaDB.org](imagens/tutorial_heidisql_01.jpg)
+
+![Downloads - MariaDB.org](imagens/tutorial_heidisql_02.jpg)
+
+a. Clique em Nova e defina um nome para a conexão. Para fins de estudo, não será necessário mudar nenhuma outra configuração, exceto a senha que já foi criada no passo C da instalação do MariaDB. E em seguida, clique em Salvar e Abrir.
+
+![Downloads - MariaDB.org](imagens/tutorial_heidisql_03.jpg)
+
+![Downloads - MariaDB.org](imagens/tutorial_heidisql_04.jpg)
