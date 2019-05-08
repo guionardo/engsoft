@@ -20,22 +20,28 @@ Em nossas aulas, usaremos o MySQL para os exercícios. Sugiro utilizar o MariaDB
 
 4. O processo de instalação é simples:
         
-        a. Aceite os termos da licença.
+a. Aceite os termos da licença.
+
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_04.jpg)
 
-        b. Selecione todas as opções para instalação.
+b. Selecione todas as opções para instalação.
+
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_05.jpg)
 
-        c. Defina a senha para o usuário root, habilite o acesso remoto e defina o encoding padrão para UTF-8.
+c. Defina a senha para o usuário root, habilite o acesso remoto e defina o encoding padrão para UTF-8.
+
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_06.jpg)
 
-        d. Mantenha as configurações de serviço, networking e engine como padrão. O nome do serviço é MySQL para que as ferramentas de acesso ao banco (HeidiSQL, DBeaver, MySQL Workbench não tenham problemas para conectar).
+d. Mantenha as configurações de serviço, networking e engine como padrão. O nome do serviço é MySQL para que as ferramentas de acesso ao banco (HeidiSQL, DBeaver, MySQL Workbench não tenham problemas para conectar).
+
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_07.jpg)    
 
-        e. Não é necessário habilitar o plugin de feedback.
+e. Não é necessário habilitar o plugin de feedback.
+
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_08.jpg)        
 
-        f. Proceda a instalação (é necessário ter um usuário administrador do Windows, pois a configuração de serviço não pode ser feita por um usuário comum).
+f. Proceda a instalação (é necessário ter um usuário administrador do Windows, pois a configuração de serviço não pode ser feita por um usuário comum).
+
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_09.jpg)
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_10.jpg)
 ![Downloads - MariaDB.org](imagens/tutorial_mariadb_win_11.jpg)
@@ -55,4 +61,6 @@ a. Clique em Nova e defina um nome para a conexão. Para fins de estudo, não se
 Temos também a opção de usar outras ferramendas de acesso:
 
 * [MySQL Workbench](https://www.mysql.com/products/workbench/)] (a ferramenta oficial do MySQL para acesso aos dados)
+![MySQL Workbench](imagens/mysql_workbench_01.jpg)
+
 * [DBeaver](https://dbeaver.io/) Ferramenta interessante que possibilita o acesso a múltiplos bancos de dados, além do MySQL/MariaDB, Oracle, SQL Server, PostgreSQL, SQLite, e muitos outros.
