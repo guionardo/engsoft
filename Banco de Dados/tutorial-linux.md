@@ -100,4 +100,4 @@ $ sudo apt-get install dbeaver-ce
 
 Isso é tudo, espero que ajude.
 
-Cordialmente, Francisco Dara!
+Cordialmente, [Francisco Dara](https://github.com/franciscodara/installApacheMariaDBPhpPhpMyAdmin)!
