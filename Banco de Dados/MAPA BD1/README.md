@@ -7,10 +7,10 @@ A empresa Alpha Beta solutions, atua no ramos de prestação de serviços e vend
 
 Neste sistema de pedido deve-se conter as seguintes ações:
 
-* [ ] Cada serviço ou produto tem um preço único.
-* [ ] Um pedido pode conter vários produtos, vários serviços ou um mescla de ambos. 
-* [ ] Todo Pedido deve-se conter os dados do cliente comprador.
-* [ ] Os cliente devem ser separados entre cada tipo, pois podem ser atribuídos privilégios de compra.
+* [X] Cada serviço ou produto tem um preço único.
+* [X] Um pedido pode conter vários produtos, vários serviços ou um mescla de ambos. 
+* [X] Todo Pedido deve-se conter os dados do cliente comprador.
+* [X] Os cliente devem ser separados entre cada tipo, pois podem ser atribuídos privilégios de compra.
 * [ ] O sistema deve armazenar os dados completos dos cliente.
 
 Você como futuro analista deverá desenvolver o DER (diagrama entidade relacionamento) e  a partir deste DER elaborar o Modelo lógico se baseando em SGBD relacional.
@@ -18,15 +18,6 @@ Você como futuro analista deverá desenvolver o DER (diagrama entidade relacion
 Para executar a atividade, pode-se utilizar o programa BrModelo disponibilizado no material extra. O uso do template para responder a atividade é obrigatório.
 
 ## Tabelas
-
-|CLIENTE|   |
-|-------|---|
-|id     |int|
-|
-* CLIENTE
-* PRODUTO
-* PEDIDO
-* ITEMPEDIDO
 
 ### CLIENTE
 
