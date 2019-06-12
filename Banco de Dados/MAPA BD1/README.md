@@ -59,3 +59,5 @@ Para executar a atividade, pode-se utilizar o programa BrModelo disponibilizado 
 ## Modelo Lógico
 
 ![Modelo Lógico](Lógico_1.png)
+
+OPS. Parece que algo está errado no modelo lógico. FK's invertidas?
