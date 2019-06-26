@@ -1,6 +1,10 @@
-# Solução
+# Engenharia de Software - Banco de Dados 2 - Solução MAPA
 
 ## RA 1650466-5 - Guionardo Furlan
+
+Solução registrada em [https://github.com/guionardo/engsoft/tree/master/Banco%20de%20Dados/MAPA%20BD2](https://github.com/guionardo/engsoft/tree/master/Banco%20de%20Dados/MAPA%20BD2)
+
+Script para testes no banco de dados: [solve.sql](https://github.com/guionardo/engsoft/tree/master/Banco%20de%20Dados/MAPA%20BD2/solve.sql)
 
 ## a) Crie o schema e as tabelas conforme o diagrama apresentado
 
@@ -176,11 +180,13 @@ id|data_venda|id_cliente|id_vendedor|
 ## b) Criando função valor comissão
 
 ``` SQL
+DELIMITER $$
 CREATE FUNCTION comissao_vendedor(valor_venda_p decimal(12,2), perc_comissao_p decimal(4,2))
 RETURNS decimal(12,2)
 begin
 	return valor_venda_p * perc_comissao_p / 100.0;
-end;
+end$$
+DELIMITER ;
 ```
 
 ## c) Crie um comando de consulta em SQL que retorne a comissão dos vendedores por produto:
@@ -232,14 +238,18 @@ alter table vendas_itens
 ## e) Criar trigger para vendas_itens
 
 ``` SQL
-CREATE OR REPLACE TRIGGER vendas_itens_ai
-        BEFORE INSERT
-        ON vendas_itens FOR EACH ROW
+DELIMITER $$
+
+CREATE TRIGGER vendas_itens_bi
+        BEFORE INSERT ON vendas_itens
+        FOR EACH ROW        
 begin
-        set new.valor_total = new.quantidade * new.valor_unitario;
-        set new.perc_comissao = nvl((select nvl(ve.perc_comissao,0) from vendedores ve, vendas v where ve.id=v.id_vendedor and v.id=new.id_vendas),0);
+        set new.valor_total = new.quantidade * new.valor_unitario;        
+        set new.perc_comissao = ifnull((select ifnull(ve.perc_comissao,0) from vendedores ve, vendas v where ve.id=v.id_vendedor and v.id=new.id_vendas),0);
         set new.valor_comissao = comissao_vendedor(new.valor_total,new.perc_comissao);
-end;
+end$$
+
+DELIMITER ;
 
 INSERT INTO vendas_itens (id_vendas, id_produtos, quantidade, valor_unitario) VALUES
         (4,     4,      2,      1.5),

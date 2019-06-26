@@ -1,3 +1,7 @@
+# ATIVIDADE MAPA - Banco de Dados 1
+
+## Enunciado
+
 A equipe de desenvolvimento de uma empresa de software irá desenvolver um sistema de vendas, onde iremos precisar controlar os produtos vendidos, para quem foi vendido e em qual data, assim como as comissões dos vendedores. Para isto, contratou você para criar o banco de dados e os requisitos funcionais necessários para atender as regras do negócio.
  
 Este sistema será utilizado por:
@@ -42,3 +46,7 @@ e) Agora que temos as colunas “valor_total”, “perc_comissao” e “valor_
   * valor_comissao = valor_total * (perc_comissao / 100.0) ou utilizar a função criada no item “b”.
  
 f) Crie 1 usuário coordenador com permissão de leitura, gravação e exclusão nas tabelas clientes, produtos e vendedores. Este usuário pode apenas visualizar as vendas emitidas.
+
+## Solução
+
+Acesse o [Arquivo Solve.md](solve.md)
