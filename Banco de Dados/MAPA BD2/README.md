@@ -49,4 +49,4 @@ f) Crie 1 usuário coordenador com permissão de leitura, gravação e exclusão
 
 ## Solução
 
-Acesse o [Arquivo Solve.md](solve.md)
+Acesse o [Arquivo SOLVE.md](SOLVE.md)
