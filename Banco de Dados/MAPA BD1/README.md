@@ -1,4 +1,10 @@
-# MAPA - Banco de Dados 1
+# Engenharia de Software - Banco de Dados 1 - Solução MAPA
+
+## RA 1650466-5 - Guionardo Furlan
+
+Solução registrada em [https://github.com/guionardo/engsoft/tree/master/Banco%20de%20Dados/MAPA%20BD1](https://github.com/guionardo/engsoft/tree/master/Banco%20de%20Dados/MAPA%20BD1)
+
+## Enunciado
 
 Uma das primeiras etapas no desenvolvimento de um software é a modelagem de dados, e, a partir desta modelagem é possível identificar os requisitos do software, e compreender melhor as regras de negócio da empresa.
 Compreenda que a modelagem não se inicia na elaboração de diagramas em um software, mas sim por meio de uma conversa com o cliente, sendo assim, vejamos abaixo o relato sobre uma empresa a qual requisitou um sistema a você.
@@ -11,7 +17,7 @@ Neste sistema de pedido deve-se conter as seguintes ações:
 * [X] Um pedido pode conter vários produtos, vários serviços ou um mescla de ambos. 
 * [X] Todo Pedido deve-se conter os dados do cliente comprador.
 * [X] Os cliente devem ser separados entre cada tipo, pois podem ser atribuídos privilégios de compra.
-* [ ] O sistema deve armazenar os dados completos dos cliente.
+* [X] O sistema deve armazenar os dados completos dos cliente.
 
 Você como futuro analista deverá desenvolver o DER (diagrama entidade relacionamento) e  a partir deste DER elaborar o Modelo lógico se baseando em SGBD relacional.
 
