@@ -1,6 +1,7 @@
-# Engenharia de Software - Banco de Dados 2 - Solução MAPA
-
-## RA 1650466-5 - Guionardo Furlan
+|![Unicesumar](logo_unicesumar.jpg)|M.A.P.A. Material de Avaliação Prática de Aprendizagem|
+|----------------------------------|--------|
+|Acadêmico: Guionardo Furlan|R.A.: 1650466-5|
+|Disciplina: Banco de Dados 2| |
 
 Solução registrada em [https://github.com/guionardo/engsoft/tree/master/Banco%20de%20Dados/MAPA%20BD2](https://github.com/guionardo/engsoft/tree/master/Banco%20de%20Dados/MAPA%20BD2)
 
