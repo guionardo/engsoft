@@ -297,7 +297,7 @@ GRANT SELECT, INSERT, UPDATE, delete, trigger on esoft_bd2.clientes to coordenad
 GRANT SELECT, INSERT, UPDATE, delete, trigger on esoft_bd2.produtos to coordenador@localhost;
 GRANT SELECT, INSERT, UPDATE, delete, trigger on esoft_bd2.vendedores to coordenador@localhost;
 GRANT SELECT on esoft_bd2.vendas to coordenador@localhost;
-GRANT SELECT ON esoft_bd2.vendas_tens to coordenador@localhost;
+GRANT SELECT ON esoft_bd2.vendas_itens to coordenador@localhost;
 
 FLUSH PRIVILEGES;
 
