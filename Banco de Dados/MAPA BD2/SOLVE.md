@@ -226,7 +226,25 @@ group by p.id, v.id_vendedor;
 |          4|Benjamin   |         4|IATE          |       1.00|1500000.0000|        12.50|187500.0000000000|
 |          4|Benjamin   |         5|RINOCERONTE   |       3.00|      2.6700|        12.50|     0.3337500000|
 
+## c.1) Forma alternativa
 
+O resultado da QUERY abaixo é o mesmo da acima, mas a forma como ela é construída difere por indexar pelo vendedor ao invés do produto.
+
+``` SQL
+SELECT		ve.id id_vendedor,
+		ve.nome nm_vendedor,
+		vi.id_produtos id_produto,
+		p.nome nm_produto,
+		sum(vi.quantidade) qtd_vendida,
+		sum(vi.quantidade * vi.valor_unitario) vlr_vendido,
+		ve.perc_comissao,
+		sum(vi.quantidade * vi.valor_unitario * ve.perc_comissao / 100) vlr_comissao 
+from		vendedores ve
+left join 	vendas v on v.id_vendedor = ve.id
+left join 	vendas_itens vi on vi.id_vendas = v.id
+left join 	produtos p on p.id = vi.id_produtos
+group by 	ve.id, vi.id_produtos;
+```
 ## d) Alterar tabela vendas_itens
 
 ``` SQL
@@ -279,6 +297,8 @@ GRANT SELECT, INSERT, UPDATE, delete, trigger on esoft_bd2.clientes to coordenad
 GRANT SELECT, INSERT, UPDATE, delete, trigger on esoft_bd2.produtos to coordenador@localhost;
 GRANT SELECT, INSERT, UPDATE, delete, trigger on esoft_bd2.vendedores to coordenador@localhost;
 GRANT SELECT on esoft_bd2.vendas to coordenador@localhost;
+GRANT SELECT ON esoft_bd2.vendas_tens to coordenador@localhost;
+
 FLUSH PRIVILEGES;
 
 show grants for coordenador@localhost;
@@ -289,5 +309,8 @@ Grants for coordenador@localhost                                                
 GRANT USAGE ON *.* TO 'coordenador'@'localhost' IDENTIFIED BY PASSWORD '*A4B6157319038724E3560894F7F932C8886EBFCF'|
 GRANT SELECT, INSERT, UPDATE, DELETE, TRIGGER ON `esoft_bd2`.`clientes` TO 'coordenador'@'localhost'              |
 GRANT SELECT, INSERT, UPDATE, DELETE, TRIGGER ON `esoft_bd2`.`produtos` TO 'coordenador'@'localhost'              |
-GRANT SELECT ON `esoft_bd2`.`vendas` TO 'coordenador'@'localhost'                                                 |
-GRANT SELECT, INSERT, UPDATE, DELETE, TRIGGER ON `esoft_bd2`.`vendedores` TO 'coordenador'@'localhost'            |
+GRANT SELECT ON `esoft_bd2`.`vendas` TO 'coordenador'@'localhost'                                      |
+GRANT SELECT, INSERT, UPDATE, DELETE, TRIGGER ON `esoft_bd2`.`vendedores` TO 'coordenador'@'localhost' |
+GRANT SELECT ON `esoft_bd2`.`vendas_itens` TO 'coordenador'@'localhost'           |
+
+# FIM DA ATIVIDADE MAPA
