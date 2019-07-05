@@ -1,3 +1,5 @@
+drop schema esoft_bd1;
+
 create schema esoft_bd1;
 
 use esoft_bd1;
@@ -5,18 +7,28 @@ use esoft_bd1;
 create table cliente (
 	id int not null primary key auto_increment,
     nome varchar(100) not null,
-    endereco varchar(100),
+    idendereco int not null,
     complemento varchar(20),
+    tipo char(1));
+
+create table endereco (
+    id int not null primary key auto_increment,
+    logradouro varchar(100) not null,
     bairro varchar(50),
     cidade varchar(50),
-    estado char(2),
-    tipo char(1),
-    key(id));
+    estado char(2));
 
-insert into cliente (nome, endereco, complemento, bairro, cidade, estado, tipo) 
+alter table cliente 
+    add constraint cliente_endereco_fk foreign key (idendereco) references endereco(id);
+
+insert into endereco (logradouro, bairro, cidade, estado) values
+    ('R Manoel Barreto', 'Victor Konder', 'Blumenau', 'SC'),
+    ('Microsoft Way', 'Redmond','Redmond','WA');
+    
+insert into cliente (nome, idendereco, complemento, tipo) 
     values 
-    ('Guionardo','R Manoel Barreto, 90', 'Ap 501', 'Victor Konder', 'Blumenau', 'SC', 'F'),
-    ('Guiosoft', 'Microsoft Way, 1', '', 'Redmond','Redmond','WA','J');
+    ('Guionardo',1, 'nº 1 - Ap 501', 'F'),
+    ('Guiosoft', 1, '1', 'J');
     
 create table item (
 	id int not null primary key auto_increment,
@@ -39,7 +51,7 @@ create table pedido (
     id_cliente int not null,
     total numeric(12,2) default 0,
     constraint fk_cliente_pedido
-		foreign key (id_cliente) references item (id)
+		foreign key (id_cliente) references cliente (id)
         on delete cascade
         on update restrict);        
         
