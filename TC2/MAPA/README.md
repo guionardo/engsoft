@@ -2,6 +2,8 @@
 
 Aluno: Guionardo Furlan - RA 1650466-5
 
+Fontes disponíveis em: https://github.com/guionardo/engsoft/tree/master/TC2/MAPA
+
 ## Solução 1 - Código com validação manual
 
 programa\Data.java
